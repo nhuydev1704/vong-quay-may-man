@@ -5,7 +5,7 @@ import Game4 from "./components/game-4/Game4";
 
 function App() {
   return (
-    <div className="w-screen h-auto bg-linear-to-r/srgb from-indigo-500 to-teal-400">
+    <div className="w-screen h-screen bg-linear-to-r/srgb from-indigo-500 to-teal-400">
       <div className="p-4 grid gap-10 lg:grid-cols-2 place-items-center">
         <div
           style={{
