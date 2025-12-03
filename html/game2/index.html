@@ -1,0 +1,150 @@
+<div id="my-lucky"></div>
+
+<script src="https://unpkg.com/lucky-canvas@1.7.25"></script>
+<script>
+  const myLucky = new LuckyCanvas.LuckyWheel("#my-lucky", {
+    width: "400px",
+    height: "400px",
+    blocks: [
+      {
+        padding: "18px",
+        imgs: [
+          {
+            src: "./imgs/bg.png",
+            width: "100%",
+          },
+        ],
+      },
+      {
+        imgs: [
+          {
+            src: "./imgs/bg2.png",
+            width: "100%",
+            rotate: true,
+          },
+          {
+            src: "./imgs/pointer.png",
+            width: "60px",
+            top: "-42px",
+          },
+        ],
+      },
+    ],
+    prizes: [
+      {
+        fonts: [
+          {
+            text: "5888 Yuan",
+            top: "16%",
+          },
+        ],
+        imgs: [
+          {
+            src: "./imgs/gift1.png",
+            width: "25%",
+            top: "35%",
+          },
+        ],
+      },
+      {
+        fonts: [
+          {
+            text: "20 Yuan",
+            top: "16%",
+          },
+        ],
+        imgs: [
+          {
+            src: "./imgs/gift1.png",
+            width: "25%",
+            top: "35%",
+          },
+        ],
+      },
+      {
+        fonts: [
+          {
+            text: "Season Pass",
+            top: "16%",
+          },
+        ],
+        imgs: [
+          {
+            src: "./imgs/gift1.png",
+            width: "25%",
+            top: "35%",
+          },
+        ],
+      },
+      {
+        fonts: [
+          {
+            text: "5 Yuan",
+            top: "16%",
+          },
+        ],
+        imgs: [
+          {
+            src: "./imgs/gift1.png",
+            width: "25%",
+            top: "35%",
+          },
+        ],
+      },
+      {
+        fonts: [
+          {
+            text: "10000 Yuan",
+            top: "16%",
+          },
+        ],
+        imgs: [
+          {
+            src: "./imgs/gift1.png",
+            width: "25%",
+            top: "35%",
+          },
+        ],
+      },
+      {
+        fonts: [
+          {
+            text: "30 Days",
+            top: "16%",
+          },
+        ],
+        imgs: [
+          {
+            src: "./imgs/gift2.png",
+            width: "25%",
+            top: "35%",
+          },
+        ],
+      },
+    ],
+    buttons: [
+      {
+        radius: "25%",
+
+        imgs: [
+          {
+            src: "./imgs/btn.png",
+            width: "100%",
+            top: "-100%",
+          },
+        ],
+      },
+    ],
+    defaultStyle: {
+      fontColor: "#913229",
+      fontSize: "15px",
+      fontWeight: 700,
+    },
+    start: function () {
+      myLucky.play();
+      setTimeout(() => {
+        myLucky.stop(0);
+      }, 3000);
+    },
+  });
+</script>

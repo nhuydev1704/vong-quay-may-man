@@ -1,0 +1,150 @@
+<div id="my-lucky"></div>
+
+<script src="https://unpkg.com/lucky-canvas@1.7.25"></script>
+<script>
+  const myLucky = new LuckyCanvas.LuckyWheel("#my-lucky", {
+    width: "400px",
+    height: "400px",
+    blocks: [
+      {
+        padding: "30px",
+        imgs: [
+          {
+            src: "./imgs/bg.png",
+            width: "100%",
+          },
+        ],
+      },
+      {
+        imgs: [
+          {
+            src: "./imgs/6.png",
+            width: "100%",
+            rotate: true,
+          },
+        ],
+      },
+    ],
+    prizes: [
+      {
+        name: "10 JD Beans",
+        fonts: [
+          {
+            text: "10 JD Beans",
+            top: "16%",
+          },
+        ],
+        imgs: [
+          {
+            src: "https://100px.net/assets/img/1.b23749dd.png",
+            width: "25%",
+            top: "35%",
+          },
+        ],
+      },
+      {
+        name: "5 JD Beans",
+        fonts: [
+          {
+            text: "5 JD Beans",
+            top: "16%",
+          },
+        ],
+        imgs: [
+          {
+            src: "https://100px.net/assets/img/1.b23749dd.png",
+            width: "25%",
+            top: "35%",
+          },
+        ],
+      },
+      {
+        name: "1 JD Bean",
+        fonts: [
+          {
+            text: "1 JD Bean",
+            top: "16%",
+          },
+        ],
+        imgs: [
+          {
+            src: "https://100px.net/assets/img/1.b23749dd.png",
+            width: "25%",
+            top: "35%",
+          },
+        ],
+      },
+      {
+        name: "Thanks for Playing",
+        fonts: [
+          {
+            text: "Thanks for Playing",
+            top: "16%",
+          },
+        ],
+        imgs: [
+          {
+            src: "https://100px.net/assets/img/0.f5d4ef55.png",
+            width: "25%",
+            top: "35%",
+          },
+        ],
+      },
+      {
+        name: "10 JD Beans",
+        fonts: [
+          {
+            text: "10 JD Beans",
+            top: "16%",
+          },
+        ],
+        imgs: [
+          {
+            src: "https://100px.net/assets/img/1.b23749dd.png",
+            width: "25%",
+            top: "35%",
+          },
+        ],
+      },
+      {
+        name: "Thanks for Playing",
+        fonts: [
+          {
+            text: "Thanks for Playing",
+            top: "16%",
+          },
+        ],
+        imgs: [
+          {
+            src: "https://100px.net/assets/img/0.f5d4ef55.png",
+            width: "25%",
+            top: "35%",
+          },
+        ],
+      },
+    ],
+    buttons: [
+      {
+        radius: "40px",
+        imgs: [
+          {
+            src: "./imgs/btn.png",
+            width: "100%",
+            top: "-100%",
+          },
+        ],
+      },
+    ],
+    defaultStyle: {
+      fontColor: "#000",
+      fontSize: "13px",
+      fontStyle: "SimHei",
+    },
+    start: function () {
+      myLucky.play();
+      setTimeout(() => {
+        myLucky.stop(0);
+      }, 3000);
+    },
+  });
+</script>
